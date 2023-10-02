@@ -1,0 +1,66 @@
+/* Header içeriğini yatayda hizalamak için bir flex container kullanıyoruz */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* İçerikleri sağ ve sol tarafta bırakır */
+    align-items: center; /* İçerikleri dikeyde ortalar */
+    padding: 10px; /* İçeriklerin kenar boşlukları */
+}
+
+/* Video ve içerikleri yatayda hizalamak için bir flex container kullanıyoruz */
+.vap {
+    display: flex;
+    align-items: center; /* İçerikleri dikeyde ortalar */
+    background-color: #E00505;
+
+}
+
+/* Videoyu sol tarafta bırakır */
+.video {
+    flex: 1; /* Video alanının genişliği */
+    margin-right: 20px; /* İçerikler ile video arasındaki boşluk */
+}
+
+/* Başlık ve paragrafı sağ tarafta bırakır */
+.content {
+    flex: 2; /* İçerikler alanının genişliği */
+    color: white;
+}
+
+/* .fotolar div'ini bir flex container olarak ayarlar */
+.fotolar {
+    display: flex;
+    justify-content: space-between; /* Resimler arasında eşit mesafe bırakır */
+    align-items: center; /* Resimleri dikeyde ortalar */
+    margin: 0; /* Sayfanın kenarlarına mesafe bırakmaz */
+    padding: 0; /* Divler arasında boşluk bırakmaz */
+}
+
+/* Resimlerin maksimum genişliğini ayarlar */
+.fotolar img {
+    max-width: 100%; /* Resimlerin maksimum genişliği sayfanın içinde kalır */
+    height: auto; /* Orantılı yükseklik */
+}
+
+/* .anafoto div'ini genişlik sınırlamaları olmadan tam sayfa genişliğinde yapar */
+.anafoto {
+    width: 100%;
+    overflow: hidden; /* Taşan içeriği gizler */
+}
+
+/* Resmin yatay boşluğu sıfırlar */
+.anafoto img {
+    width: 100%;
+    height: auto;
+    margin: 0; /* Sol ve sağ boşluğu sıfırlar */
+}
+
+/* Başlık stilini ve resim boyutunu ayarlayabilirsiniz */
+h1 {
+    font-size: 24px;
+    margin: 0; /* Başlığın kenar boşluğunu sıfırlar */
+}
+
+img {
+    width: 100px; /* Resim genişliği */
+    height: auto; /* Orantılı yükseklik ayarı */
+}
